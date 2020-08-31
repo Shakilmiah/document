@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width,initial-scale-1.0">
+	<title>JS</title>
+	<style>
+		.email{
+			padding-top: 20px;
+			display: inline-block;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<input id ="text" id="frame" onchange="myfunce()">
+	<span>Your email address is:</span>
+		<span id ="data"></span>
+
+	<div onmouseover="myfunc()">
+		<p id="test">1</p>
+
+			<div onmousemove="myfunc2()">
+		<p id="test1">1</p>
+
+			<div onmouseout="myfunc3()">
+		<p id="test2">1</p>
+		
+	</div>
+	<input type="text" onkeydown="myfunction()">
+	<p id ="data">Data is a plural of datum, which is originally a Latin noun meaning “something given.” Today, data is used in English both as a plural noun meaning?</p>
+
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+       
+	<script>
+		var car={
+			type:"fiat",
+			model:"400",
+			color:"Red"
+		};
+		document.write(car['model']);
+		
+		function myFunction() {
+  var x = document.getElementById("frame").value;
+  document.getElementById("data").innerHTML =x;
+} 
+  
+
+     var a =1
+          var b =1
+               var c =1
+
+   function myfunc(){
+   	document.getElementById("test").innerHTML=a += 1;
+   }
+      function myfunc2(){
+   	document.getElementById("test1").innerHTML=b += 1;
+   }
+      function myfunc3(){
+   	document.getElementById("test2").innerHTML=c += 1;
+   }
+
+   function myfunction(){
+   	document.getElementByid("data").style.display="none";
+   }
+
+      var str ="Apple, Banana, Kiwi";
+   var res = str.substr(-0,5);
+   document.write(res)
+
+      var str ="Apple, Banana, Kiwi";
+   var res = str.substr(0,13);
+   document.write(res)
+
+
+   var str ="Apple, Banana, Kiwi";
+   var res = str.substr(0);
+   document.write(res);
+
+   str ="please visit the site";
+   var n = str.replace("site","www.etc");
+   document.write(n);
+
+   var text1 = "Hello world!";
+   var text2 =(text1);
+   document.write(text2);
+
+      var text1 = "Hello";
+   var text2 ="world";
+   var text3 =text1.concat(" ",text2)
+   document.write(text3);
+
+
+
+	</script>
+
+
+</body>
+</html>
+
+
